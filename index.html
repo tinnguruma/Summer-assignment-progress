@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CSS</title>
+  <title>課題終了状況</title>
   
   <style type="text/css">
   .progBar{
@@ -17,7 +17,7 @@
   .progBar .bar{
       position:absolute;
       height:100%;
-      background-color:#FFCA28;
+      background-color:#f7e4a8;
       animation: progress 4s normal;
       animation-fill-mode: forwards;
   }
@@ -35,13 +35,35 @@
 </head>
   
 <body>
-  <p>now loading...</p>
+  <h2>課題終了状況</h2>
+  <p>同期中...</p>
   <div class="progBar">
   <p class="bar"></p>
   </div>
+  <br>
+  <br>
+  <br>
+  <label for="file">国語</label>
+  <progress id="file" max="100" value="0"> 0% </progress>0%(0/?)
+  <br>
+  <br>
+  <label for="file">数学:解き直し</label>
+  <progress id="file" max="1" value="0"> 0% </progress>0%(0/1)
+  <br>
+  <label for="file">数学:プリント</label>
+  <progress id="file" max="1" value="0"> 0% </progress>0%(0/1)
+  <br>
+  <label for="file">数学:レジェンド</label>
+  <progress id="file" max="40" value="19"> 47.5% </progress>47.5%(19/40)
+  <br>
+  <br>
+  <label for="file">英語:CNN</label>
+  <progress id="file" max="12" value="0"> 0% </progress>0%(0/12)
+  <br>
+  <label for="file">英語:その他</label>
+  <progress id="file" max="12" value="0"> 0% </progress>0%(0/？)
+  <br>
   
-  <label for="file">File progress:</label>
-  <progress id="file" max="100" value="70"> 70% </progress>
 
   
 </body>
